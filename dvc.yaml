@@ -1,0 +1,9 @@
+stages:
+  prepare:
+    cmd: cd notebook && papermill prep.ipynb ..\ex_notebook\prep_output2.ipynb
+
+    deps:
+      - E:/projects of camp/safety-helmet/data/data.yaml
+      
+    
+

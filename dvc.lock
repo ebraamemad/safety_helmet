@@ -1,0 +1,9 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: cd notebook && papermill prep.ipynb ..\ex_notebook\prep_output2.ipynb
+    deps:
+    - path: data\data.yaml
+      hash: md5
+      md5: 0134dc0f7a2025ef5797c02eee895e3f
+      size: 280
