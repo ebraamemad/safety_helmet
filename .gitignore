@@ -2,5 +2,3 @@ data
 runs
 yolo_optuna_mlflow
 mlruns
-yolo11n.pt
-.dvc
