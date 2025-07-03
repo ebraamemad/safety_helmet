@@ -1,0 +1,8 @@
+ir:
+  min : 0.01
+  max : 0.1
+dp:
+  min : 0.1
+  max : 0.6
+
+batch_options: [32, 64]

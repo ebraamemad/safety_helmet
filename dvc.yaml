@@ -6,4 +6,18 @@ stages:
       - E:/projects of camp/safety-helmet/data/data.yaml
       
     
+  train:
+
+    cmd: cd notebook && papermill train.ipynb ..\ex_notebook\train_output.ipynb
+
+    deps:
+      - E:/projects of camp/safety-helmet/data/data.yaml
+      - E:/projects of camp/safety-helmet/params.yaml
+
+    outs:
+      - runs
+      - yolo_optuna_mlflow
+       
+
+
 
