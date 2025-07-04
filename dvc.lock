@@ -7,3 +7,25 @@ stages:
       hash: md5
       md5: 0134dc0f7a2025ef5797c02eee895e3f
       size: 280
+  train:
+    cmd: cd notebook && papermill train.ipynb ..\ex_notebook\train_output.ipynb
+    deps:
+    - path: data\data.yaml
+      hash: md5
+      md5: 0134dc0f7a2025ef5797c02eee895e3f
+      size: 280
+    - path: params.yaml
+      hash: md5
+      md5: 2c9b0119bdf9ed8a541c4d72f454c032
+      size: 88
+    outs:
+    - path: runs
+      hash: md5
+      md5: 1932d7bf439b5bf1aad3b0e2ca026d40.dir
+      size: 23388444
+      nfiles: 28
+    - path: yolo_optuna_mlflow
+      hash: md5
+      md5: 71bf67d828e3e6fa6268305bee245d46.dir
+      size: 70721890
+      nfiles: 88
